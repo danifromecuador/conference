@@ -21,16 +21,16 @@ body {
 .home .hero .description {}
 .home .hero .date {}
 .home .hero .national {}
-.home .main-program {}
-.home .main-program .text {}
+.home .main {}
+.home .main .text {}
 .horizontal-rule {}
-.home .main-program .big {}
-.home .main-program .elements {}
-.home .main-program .element {}
-.home .main-program .element .icon {}
-.home .main-program .element .title {}
-.home .main-program .element .description {}
-.home .main-program .join {}
+.home .main .big {}
+.home .main .elements {}
+.home .main .element {}
+.home .main .element .icon {}
+.home .main .element .title {}
+.home .main .element .description {}
+.home .main .join {}
 .home .speakers {}
 .home .speakers .title {}
 .home .speakers .speakers .horizontal-rule {}
