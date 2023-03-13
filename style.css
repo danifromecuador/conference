@@ -2,26 +2,45 @@
 
 * {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   border: 1px solid red;
 }
 
 body {
-  width: 480px;
+  width: 375px;
   height: auto;
+  margin: 0 auto;
   font-family: Inter;
 }
 
-.home {}
-.hamburger {}
-.home .hero {}
-.home .hero .hello {}
-.home .hero .title {}
-.home .hero .description {}
-.home .hero .date {}
-.home .hero .national {}
-.home .main {}
+/* .home {
+} */
+.home .nav-var-and-hero {
+  background-image: url(images/backgrounds/hero.svg);
+}
+.nav-bar {
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.hamburger {
+  width: 31px;
+  height: 27px;
+}
+
+.home .nav-bar-and-hero .hero {
+  padding: 18px 24px;
+}
+.home .nav-bar-and-hero .hero .hello {}
+.home .nav-bar-and-hero .hero .title {}
+.home .nav-bar-and-hero .hero .description {}
+.home .nav-bar-and-hero .hero .date {}
+.home .nav-bar-and-hero .hero .national {}
+.home .main {
+  padding: 18px 24px;
+}
 .home .main .text {}
 .horizontal-rule {}
 .home .main .big {}
@@ -31,7 +50,9 @@ body {
 .home .main .element .title {}
 .home .main .element .description {}
 .home .main .join {}
-.home .speakers {}
+.home .speakers {
+  padding: 18px 24px;
+}
 .home .speakers .title {}
 .home .speakers .speakers .horizontal-rule {}
 .home .speakers .speaker {}
@@ -46,17 +67,39 @@ body {
 /* /////////////////////////////////////////// */
 /*                SECOND PAGE                  */
 /* /////////////////////////////////////////// */
-.about {}
-.about .hero {}
-.about .hero .hello {}
-.about .hero .title {}
-.about .hero .description {}
-.about .hero .please {}
-.about .creative {}
-.about .creative .title {}
+.about {
+}
+.about .hero {
+}
+.about .hero .hello {
+  padding: 18px 24px;
+}
+.about .hero .title {  
+  padding: 18px 24px;
+}
+.about .hero .description {
+  padding: 18px 24px;
+}
+.about .hero .please {  
+  padding: 18px 24px;
+}
+.about .creative {
+  padding: 18px 24px;
+}
+.about .creative .title {
+  padding: 18px 24px;
+}
 .about .creative .horizontal-rule {}
-.about .creative .text {}
-.about .creative .cc {}
+.about .creative .text {
+  padding: 18px 24px;
+}
+.about .creative .cc {
+  padding: 18px 24px;
+}
+
+.about .past {
+  padding: 18px 24px;
+}
 .about .past .title {}
 .about .past .horizontal-rule {}
 .about .past .description {}
@@ -66,9 +109,13 @@ body {
 .about .past .past-two {}
 .about .past .past-two .text {}
 .about .past .past-two .year {}
-.about .partner {}
+.about .partner {
+  padding: 18px 24px;
+}
 .about .partner .title {}
 .about .partner .partners {} 
-.about .cc {}
+.about .cc {
+  padding: 18px 24px;
+}
 .about .cc .left {}
 .about .cc .right {}
