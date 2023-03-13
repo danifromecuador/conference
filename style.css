@@ -2,9 +2,73 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  text-align: center;
   border: 1px solid red;
 }
 
+body {
+  width: 480px;
+  height: auto;
+  font-family: Inter;
+}
+
+.home {}
+.hamburger {}
+.home .hero {}
+.home .hero .hello {}
+.home .hero .title {}
+.home .hero .description {}
+.home .hero .date {}
+.home .hero .national {}
+.home .main-program {}
+.home .main-program .text {}
+.horizontal-rule {}
+.home .main-program .big {}
+.home .main-program .elements {}
+.home .main-program .element {}
+.home .main-program .element .icon {}
+.home .main-program .element .title {}
+.home .main-program .element .description {}
+.home .main-program .join {}
+.home .speakers {}
+.home .speakers .title {}
+.home .speakers .speakers .horizontal-rule {}
+.home .speakers .speaker {}
+.home .speakers .speaker .photo {}
+.home .speakers .speaker .resume {}
+.home .speakers .speaker .name {}
+.home .speakers .speaker .title {}
+.home .speakers .speaker .description {}
+.home .speakers .more {}
+.home .speakers .more .text {}
+.home .speakers .more .down-arrow {}
+/* /////////////////////////////////////////// */
+/*                SECOND PAGE                  */
+/* /////////////////////////////////////////// */
+.about {}
+.about .hero {}
+.about .hero .hello {}
+.about .hero .title {}
+.about .hero .description {}
+.about .hero .please {}
+.about .creative {}
+.about .creative .title {}
+.about .creative .horizontal-rule {}
+.about .creative .text {}
+.about .creative .cc {}
+.about .past .title {}
+.about .past .horizontal-rule {}
+.about .past .description {}
+.about .past .past-one {}
+.about .past .past-one .year {}
+.about .past .past-one .text {}
+.about .past .past-two {}
+.about .past .past-two .text {}
+.about .past .past-two .year {}
+.about .partner {}
+.about .partner .title {}
+.about .partner .partners {} 
+.about .cc {}
+.about .cc .left {}
+.about .cc .right {}
