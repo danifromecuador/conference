@@ -187,12 +187,21 @@ body {
 .about {
 }
 .about .hero {
+  background-image: url(images/backgrounds/about.svg);
 }
 .about .hero .hello {
   padding: 18px 24px;
+  color: var(--orange);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
 }
 .about .hero .title {  
   padding: 18px 24px;
+  color: var(--orange);
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
 }
 .about .hero .description {
   padding: 18px 24px;
