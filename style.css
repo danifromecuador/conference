@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 :root {
@@ -222,16 +222,21 @@ body {
 }
 .about .creative {
   padding: 18px 24px;
+  text-align: center;
 }
 .about .creative .title {
   padding: 18px 24px;
+  font-size: 22px;
+  font-weight: 700;
 }
-.about .creative .horizontal-rule {}
 .about .creative .text {
-  padding: 18px 24px;
+  padding: 0x 24px;
+  font-size: 12px;
+  font-weight: 500;
 }
 .about .creative .cc {
-  padding: 18px 24px;
+  width: 100%;
+  
 }
 
 .about .past {
