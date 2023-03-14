@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -86,7 +86,7 @@ body {
   width: 40px;
   height: 2px;
   background-color: var(--orange);
-  margin: 0 auto;  
+  margin: 1px auto 25px auto;
 }
 .home .program .elements {
   display: flex;
@@ -126,15 +126,59 @@ body {
 .home .speakers {
   padding: 18px 24px;
 }
-.home .speakers .title {}
-.home .speakers .speakers .horizontal-rule {}
-.home .speakers .speaker {}
-.home .speakers .speaker .photo {}
-.home .speakers .speaker .resume {}
-.home .speakers .speaker .name {}
-.home .speakers .speaker .title {}
-.home .speakers .speaker .description {}
-.home .speakers .more {}
+.home .speakers .title {
+  text-align: center;
+  padding: 12px;
+  font-weight: 600;
+}
+.home .speakers .speaker {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  margin: 20px 0;
+}
+.home .speakers .speaker .photo {
+  width: 120px;
+  height: 120px;
+  background-color: blue;
+}
+.home .speakers .speaker .resume {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.home .speakers .speaker .name {
+  font-size: 14px;
+  font-weight: 700;
+}
+.home .speakers .speaker .title {
+  text-align: left;
+  padding: 0;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--orange);
+}
+.home .speakers .speaker .horizontal-rule {
+  background-color: var(--dark);
+  width: 20px;
+  height: 2px;
+  margin: 0;
+  
+}
+.home .speakers .speaker .description {
+  font-size: 10px;
+  font-weight: 700;
+}
+.home .speakers .more {
+  margin-top: 40px;
+  border: 1px solid var(--dark);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  padding: 10px 0;
+}
 .home .speakers .more .text {}
 .home .speakers .more .down-arrow {}
 /* /////////////////////////////////////////// */
