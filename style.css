@@ -4,21 +4,27 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  border: 1px solid red;
+}
+
+:root {
+  --dark: #272a31;
+  --orange: #ec5242;
+  --gray: #d3d3d3;
 }
 
 body {
   width: 375px;
   height: auto;
   margin: 0 auto;
-  font-family: Inter;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: var(--dark);
 }
 
 /* .home {
 } */
 .home .nav-bar-and-hero {
   background-image: url(images/backgrounds/hero.svg);
-  background-color: red;
 }
 .nav-bar {
   padding: 18px 24px;
@@ -26,16 +32,40 @@ body {
   justify-content: space-between;
 }
 .hamburger {
+
 }
 
 .home .nav-bar-and-hero .hero {
-  padding: 18px 24px;
+  padding: 100px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
 }
-.home .nav-bar-and-hero .hero .hello {}
-.home .nav-bar-and-hero .hero .title {}
-.home .nav-bar-and-hero .hero .description {}
-.home .nav-bar-and-hero .hero .date {}
-.home .nav-bar-and-hero .hero .national {}
+.home .nav-bar-and-hero .hero .hello {
+  color: var(--orange);
+  font-size: 18px;
+  font-weight: 400;
+}
+.home .nav-bar-and-hero .hero .title {
+  color: var(--orange);
+  font-size: 29px;
+  font-weight: 800;
+}
+.home .nav-bar-and-hero .hero .description {
+  padding: 10px;
+  border: 5px solid white;
+  font-size: 10px;
+  font-weight: 500;
+}
+.home .nav-bar-and-hero .hero .date {
+  font-size: 22px;
+  font-weight: 700;
+}
+.home .nav-bar-and-hero .hero .national {
+  font-size: 11.8px;
+  font-weight: 500;
+}
 .home .main {
   padding: 18px 24px;
 }
