@@ -19,8 +19,8 @@ body {
   color: var(--dark);
 }
 
-/* .home {
-} */
+.home {
+}
 .home .nav-bar-and-hero {
   background-image: url(images/backgrounds/hero.svg);
 }
@@ -86,7 +86,7 @@ body {
   width: 40px;
   height: 2px;
   background-color: var(--orange);
-  margin: 1px auto 25px auto;
+  margin: 10px auto 25px auto;
 }
 .home .program .elements {
   display: flex;
@@ -241,16 +241,41 @@ body {
 
 .about .past {
   padding: 18px 24px;
+  text-align: center;
 }
-.about .past .title {}
-.about .past .horizontal-rule {}
-.about .past .description {}
-.about .past .past-one {}
-.about .past .past-one .year {}
-.about .past .past-one .text {}
-.about .past .past-two {}
-.about .past .past-two .text {}
-.about .past .past-two .year {}
+.about .past .title {
+  font-size: 15px;
+  font-weight: 700;
+}
+.about .past .description {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 12px;
+}
+.about .past .past-one {
+  background-image: url(images/backgrounds/2011.png);
+  backdrop-filter: blur(100px) ;
+  height: 180px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  color: white;
+}
+.about .past .past-one .year {
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  padding: 10px;
+  font-size: 28px;
+  font-weight: 800;
+}
+.about .past .past-one .text {
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  padding: 10px;
+}
 .about .partner {
   padding: 18px 24px;
 }
