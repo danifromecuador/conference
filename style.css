@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,10 +27,17 @@ body {
 .nav-bar {
   padding: 18px 24px;
   display: flex;
+}
+.ham {
+  height: 28px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
-.hamburger {
-
+.line {
+  width: 32px;
+  height: 6px;
+  background-color: var(--dark);
 }
 
 .home .nav-bar-and-hero .hero {
@@ -66,18 +71,58 @@ body {
   font-size: 11.8px;
   font-weight: 500;
 }
-.home .main {
-  padding: 18px 24px;
+.home .program {
+  padding: 30px 24px;
+  background-image: url(images/backgrounds/program.svg);
+  color: var(--gray);
 }
-.home .main .text {}
-.horizontal-rule {}
-.home .main .big {}
-.home .main .elements {}
-.home .main .element {}
-.home .main .element .icon {}
-.home .main .element .title {}
-.home .main .element .description {}
-.home .main .join {}
+.home .program .text {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.horizontal-rule {
+  width: 40px;
+  height: 2px;
+  background-color: var(--orange);
+  margin: 0 auto;  
+}
+.home .program .elements {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.home .program .element {
+  background-color: rgb(95, 95, 95);
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0px;
+  row-gap: 20px;
+}
+.home .program .element .icon {
+  width: 40px;
+}
+.home .program .element .title {
+  width: 20%;
+  font-size: 11px;
+  color: var(--orange);
+  font-weight: 600;
+}
+.home .program .element .description {
+  font-size: 10px;
+  width: 60%;
+}
+.home .program .join {
+  background-color: var(--orange);
+  padding: 15px;
+  margin: 30px 60px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
 .home .speakers {
   padding: 18px 24px;
 }
