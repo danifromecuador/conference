@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -16,18 +16,16 @@ body {
 
 /* .home {
 } */
-.home .nav-var-and-hero {
+.home .nav-bar-and-hero {
   background-image: url(images/backgrounds/hero.svg);
+  background-color: red;
 }
 .nav-bar {
   padding: 18px 24px;
   display: flex;
   justify-content: space-between;
-
 }
 .hamburger {
-  width: 31px;
-  height: 27px;
 }
 
 .home .nav-bar-and-hero .hero {
