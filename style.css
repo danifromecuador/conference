@@ -18,7 +18,8 @@ a {
 
 /* FOR MOBILE VERSION HIDE THESE: */
 .ham-desk,
-.nav-desk-right {
+.nav-desk-right,
+.join-desk {
   display: none;
 }
 
@@ -32,6 +33,9 @@ body {
 
 .home .nav-bar-and-hero {
   background-image: url(images/backgrounds/hero.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .nav-bar {
@@ -55,7 +59,7 @@ body {
 }
 
 .home .nav-bar-and-hero .hero {
-  padding: 100px 24px;
+  padding: 40px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,7 +122,7 @@ body {
 }
 
 .home .program .element {
-  background-color: rgb(95, 95, 95);
+  background-color: rgba(95, 95, 95, 0.5);
   padding: 8px 12px;
   display: flex;
   justify-content: space-between;
@@ -378,6 +382,12 @@ body {
     width: 1080px;
   }
 
+  .home .nav-bar-and-hero {
+    background-image: url(images/backgrounds/hero_hero_desk.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .nav-bar {
     padding: 18px 100px;
     background-color: white;
@@ -529,12 +539,11 @@ body {
   }
 
   .about .hero-1 .description-3 {
-    /* padding: 50px 200px; */
-    margin: 50px 200px;
+    margin: 40px 200px;
   }
 
   .about .hero-1 .please {
-    padding: 50px 200px;
+    padding: 0 200px 50px 200px;
     text-align: center;
     font-size: 12px;
     font-weight: 500;
