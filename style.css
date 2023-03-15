@@ -366,7 +366,8 @@ body {
   /* FOR MOBILE VERSION HIDE THESE: */
   .ham,
   .home .program .join,
-  .home .speakers .more {
+  .home .speakers .more,
+  .about .hero-1 .hello-0 {
     display: none;
   }
 
@@ -500,4 +501,58 @@ body {
     column-gap: 60px;
   }
 
+  .about .footer-cc .left {
+    width: 30%;
+  }
+
+  /* /////////////////////////////////////////// */
+
+  /*                SECOND PAGE                  */
+
+  /* /////////////////////////////////////////// */
+
+  .home {
+    display: none;
+  }
+
+  .about .hero-1 {
+    background-image: url(images/backgrounds/hero_desk.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .about .hero-1 .title-0 {
+    padding: 50px 200px;
+    color: var(--orange);
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .about .hero-1 .description-3 {
+    /* padding: 50px 200px; */
+    margin: 50px 200px;
+  }
+
+  .about .hero-1 .please {
+    padding: 50px 200px;    
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .about .creative {
+    padding: 50px 200px;
+    text-align: center;
+  }
+
+  .about .creative .text {
+    padding: 20px 80px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .about .creative .cc {
+    width: 50%;
+    margin-top: 20px;
+  }
 }
