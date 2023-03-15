@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
   /* border: 1px solid red; */
 }
 
@@ -301,7 +302,9 @@ body {
 
 .about .past .past-one {
   background-image: url(images/backgrounds/2011.png);
-  backdrop-filter: blur(100px);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
   height: 180px;
   margin: 20px 0;
   display: flex;
@@ -511,30 +514,27 @@ body {
 
   /* /////////////////////////////////////////// */
 
-  .home {
-    display: none;
-  }
-
   .about .hero-1 {
     background-image: url(images/backgrounds/hero_desk.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .about .hero-1 .title-0 {
-    padding: 50px 200px;
+    padding: 50px 200px 0 200px;
     color: var(--orange);
     font-size: 45px;
     font-weight: 800;
     text-align: center;
   }
-  
+
   .about .hero-1 .description-3 {
     /* padding: 50px 200px; */
     margin: 50px 200px;
   }
 
   .about .hero-1 .please {
-    padding: 50px 200px;    
+    padding: 50px 200px;
     text-align: center;
     font-size: 12px;
     font-weight: 500;
@@ -554,5 +554,22 @@ body {
   .about .creative .cc {
     width: 50%;
     margin-top: 20px;
+  }
+
+  .about .past .title-2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .about .past .description-3 {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 12px 0 24px 0;
+  }
+
+  .past-one-and-two {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 80px;
   }
 }
