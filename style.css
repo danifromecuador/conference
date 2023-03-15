@@ -362,7 +362,6 @@ body {
 /* /////////////////////////////////////////// */
 
 @media screen and (min-width: 768px) {
-  
   /* FOR MOBILE VERSION HIDE THESE: */
   .ham,
   .home .program .join,
@@ -371,7 +370,7 @@ body {
   }
 
   body {
-    width: 1080px;    
+    width: 1080px;
   }
 
   .nav-bar {
@@ -429,6 +428,7 @@ body {
     flex-direction: row;
     column-gap: 10px;
   }
+
   .home .program .element {
     width: 20%;
     height: 180px;
@@ -445,14 +445,14 @@ body {
   .home .program .element .icon {
     width: 60px;
   }
-  
+
   .home .program .element .title {
     width: 100%;
     font-size: 15px;
     color: var(--orange);
     font-weight: 600;
   }
-  
+
   .home .program .element .description {
     font-size: 12px;
     width: 90%;
@@ -472,14 +472,8 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .home .speakers {
     padding: 50px 100px;
   }
-
-
-
-
-
-
 }
