@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -468,12 +468,21 @@ body {
     color: var(--gray);
   }
 
+  .home .speakers {
+    padding: 50px 100px;
+  }
+
+  .home .speakers .title-6 {
+    font-size: 22px;
+  }
+
   .speaker-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  .home .speakers {
-    padding: 50px 100px;
+  .home .speakers .speaker {
+    width: 45%;
   }
 }
