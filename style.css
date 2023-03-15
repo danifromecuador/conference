@@ -2,12 +2,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 1px solid red;
 }
 
 :root {
   --dark: #272a31;
   --orange: #ec5242;
   --gray: #d3d3d3;
+}
+
+a {
+  color: inherit;
+}
+
+/* FOR MOBILE VERSION HIDE THESE: */
+.ham-desk,
+.nav-desk-right {
+  display: none;
 }
 
 body {
@@ -25,6 +36,8 @@ body {
 .nav-bar {
   padding: 18px 24px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ham {
@@ -340,4 +353,133 @@ body {
 
 .about .footer-cc .right {
   font-size: 10px;
+}
+
+/* /////////////////////////////////////////// */
+
+/*             DESKTOP VERSION                 */
+
+/* /////////////////////////////////////////// */
+
+@media screen and (min-width: 768px) {
+  
+  /* FOR MOBILE VERSION HIDE THESE: */
+  .ham,
+  .home .program .join,
+  .home .speakers .more {
+    display: none;
+  }
+
+  body {
+    width: 1080px;    
+  }
+
+  .nav-bar {
+    padding: 18px 100px;
+    background-color: white;
+  }
+
+  .ham-desk {
+    display: flex;
+  }
+
+  .nav-desk-right {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home .nav-bar-and-hero .hero {
+    padding: 150px 100px;
+    row-gap: 20px;
+  }
+
+  .home .nav-bar-and-hero .hero .hello {
+    font-size: 33px;
+  }
+
+  .home .nav-bar-and-hero .hero .title {
+    font-size: 55px;
+  }
+
+  .home .nav-bar-and-hero .hero .description {
+    font-size: 15px;
+    width: 60%;
+  }
+
+  .home .nav-bar-and-hero .hero .date {
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .home .nav-bar-and-hero .hero .national {
+    font-size: 18px;
+  }
+
+  .home .program {
+    padding: 50px 100px;
+  }
+
+  .home .program .text {
+    font-size: 22px;
+  }
+
+  .home .program .elements {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+  .home .program .element {
+    width: 20%;
+    height: 180px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 10px;
+    text-align: center;
+  }
+
+  .home .program .element .icon {
+    width: 60px;
+  }
+  
+  .home .program .element .title {
+    width: 100%;
+    font-size: 15px;
+    color: var(--orange);
+    font-weight: 600;
+  }
+  
+  .home .program .element .description {
+    font-size: 12px;
+    width: 90%;
+    height: 30%;
+  }
+
+  .join-desk {
+    padding: 15px;
+    margin: 30px 60px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--gray);
+  }
+
+  .speaker-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .home .speakers {
+    padding: 50px 100px;
+  }
+
+
+
+
+
+
 }
