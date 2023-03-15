@@ -348,6 +348,7 @@ body {
   padding: 18px 24px;
   display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 12px;
 }
 
@@ -485,4 +486,18 @@ body {
   .home .speakers .speaker {
     width: 45%;
   }
+
+  .about .partner {
+    padding: 50px 100px;
+  }
+
+  .about .partner .partners {
+    column-gap: 30px;
+  }
+
+  .about .footer-cc {
+    padding: 50px 100px;
+    column-gap: 60px;
+  }
+
 }
