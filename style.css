@@ -18,7 +18,6 @@ a {
 }
 
 /* FOR MOBILE VERSION HIDE THESE: */
-.ham-desk,
 .nav-desk-right,
 .join-desk {
   display: none;
@@ -72,7 +71,10 @@ body {
   background-size: cover;
 }
 
-.nav-bar {
+.nav-bar {  
+  position: fixed;
+  background-color: var(--gray);
+  width: 375px;
   padding: 18px 24px;
   display: flex;
   justify-content: space-between;
@@ -101,6 +103,7 @@ body {
 }
 
 .home .nav-bar-and-hero .hero .hello {
+  margin: 40px 0 0 0;
   color: var(--orange);
   font-size: 18px;
   font-weight: 400;
@@ -260,6 +263,10 @@ body {
 /*                SECOND PAGE                  */
 
 /* /////////////////////////////////////////// */
+
+.space {
+  height: 70px;
+}
 
 .about .hero-1 {
   background-image: url(images/backgrounds/about.svg);
@@ -619,6 +626,7 @@ body {
 }
 
 /* DOM MOBILE MENU  */
-.mobile-menu.hide {
+.mobile-menu.hide,
+.nav-bar.hide {
   display: none;
 }
