@@ -52,6 +52,7 @@ body {
 .mobile-menu-close {
   height: 28px;
   width: 32px;
+  cursor: pointer;
 }
 
 .mobile-menu-elements {
@@ -80,6 +81,7 @@ body {
   position: fixed;
   background-color: var(--gray);
   width: 375px;
+  height: auto;
   padding: 0px 24px;
   display: flex;
   justify-content: space-between;
@@ -91,6 +93,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .line {
@@ -634,6 +637,8 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 30px 80px;
+    column-gap: 20px;
+
   }
 }
 
