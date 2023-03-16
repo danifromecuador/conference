@@ -76,7 +76,7 @@ body {
   background-size: cover;
 }
 
-.nav-bar {  
+.nav-bar {
   position: fixed;
   background-color: var(--gray);
   width: 375px;
@@ -257,7 +257,10 @@ body {
   margin-top: 40px;
   border: 1px solid var(--dark);
   border-radius: 3px;
-  display: flex;
+
+  /* change display to flex to see the button more */
+
+  display: none;
   justify-content: center;
   column-gap: 15px;
   padding: 10px 0;

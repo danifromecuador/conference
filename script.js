@@ -4,51 +4,75 @@ const mobileMenuClose = document.querySelector('.mobile-menu-close');
 const about = document.querySelector('#about-link');
 const navBar = document.querySelector('.nav-bar');
 
-ham.addEventListener('click', () => {
+ham.addEventListener('click', () => { // open mobile menu and hide nav bar
   mobileMenu.classList.toggle('hide');
   navBar.classList.toggle('hide');
 });
 
-mobileMenuClose.addEventListener('click', () => {
+mobileMenuClose.addEventListener('click', () => { // close mobile menu and show nav bar
   mobileMenu.classList.toggle('hide');
   navBar.classList.toggle('hide');
 });
 
-about.addEventListener('click', () => {
+about.addEventListener('click', () => { // close mobile menu and show nav bar and navigate to about section
   mobileMenu.classList.toggle('hide');
   navBar.classList.toggle('hide');
 });
 
 const speakerData = [
   {
-    name: 'John Smith',
-    position: 'university',
-    details: 'lorem',
-    photo: 'images/photos/photo1',
+    name: 'Richard Dawkins',
+    title: 'Professor of Evolutionary Biology at the University of Oxford',
+    description: 'Dawkins is famous for his contributions to the theory of evolution, particularly for his book "The Selfish Gene" (1976)',
+    photo: 'images/photos/speaker1_rd.jpg',
   },
   {
-    name: 'John Smith 2',
-    position: 'university 2',
-    details: 'lorem 2',
-    photo: 'images/photos/photo1 2',
+    name: 'Juan Eslava Galan',
+    title: 'Professor of Contemporary History at the University of Zaragoza',
+    description: 'Galán is famous for his literary works, which include novels and historical studies. His famous book: "En Busca del Unicornio"',
+    photo: 'images/photos/speaker2_jeg.jpg',
+  },
+  {
+    name: 'James Randy',
+    title: 'Canadian-American magician, skeptic, and investigator of paranormal claims',
+    description: ' He was famous for his work debunking pseudoscientific claims, particularly in the fields of psychic phenomena.',
+    photo: 'images/photos/speaker3_jr.jpg',
+  },
+  {
+    name: 'Mauricio-Jose Schwarz',
+    title: 'Mexican novelist,journalist and photographer, based in Spain from 1999',
+    description: 'Mainly oriented to gender literature (science fiction, terror, police) has published more than a hundred stories in magazines in the US.',
+    photo: 'images/photos/speaker4_mjs.jpg',
+  },
+  {
+    name: 'Carl Sagan',
+    title: 'He worked in Harvard University, Cornell University, and the Jet Propulsion Laboratory',
+    description: 'He is famous for his contributions to the study of the solar system, his work on the Voyager mission, and for popularizing science.',
+    photo: 'images/photos/speaker5_cs.jpg',
+  },
+  {
+    name: 'Bertrand Russell',
+    title: ' British philosopher and mathematician at  Cambridge, and the University of Chicago',
+    description: 'He is famous for his contributions to logic, set theory, and analytic philosophy, as well as his political activism and human rights.',
+    photo: 'images/photos/speaker6_br.jpg',
   },
 ];
 
-const html = `
+const speakerContainer = document.querySelector('.speaker-container');
+
+document.addEventListener('DOMContentLoaded', () => { // when the DOM loads
+  for (let i = 0; i < 6; i += 1) { // this loops 6 times for 6 speakers
+    const html = `
   <div class="speaker">
-    <img src="" alt="" class="photo">
+    <img src="${speakerData[i].photo}" alt="" class="photo">
     <div class="resume">
-      <div class="name">${speakerData[0].name}</div>
-      <div class="title">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</div>
+      <div class="name">${speakerData[i].name}</div>
+      <div class="title">${speakerData[i].title}</div>
       <div class="horizontal-rule"></div>
-      <div class="description">Lorem ipsum dolor sit amet  asperiores eius! Iste fuga vel perspiciatis iusto?</div>
+      <div class="description">${speakerData[i].description} </div>
     </div>
   </div
-`;
-
-const newSpeaker = document.querySelector('.new-speaker');
-
-ham.addEventListener('click', () => {
-  newSpeaker.innerHTML = html;
-
+  `;
+    speakerContainer.innerHTML += html; // this adds more speakers instead of replacing them
+  }
 });
