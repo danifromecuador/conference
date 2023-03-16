@@ -17,6 +17,11 @@ a {
   text-decoration: none;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 /* FOR MOBILE VERSION HIDE THESE: */
 .nav-desk-right,
 .join-desk {
@@ -430,7 +435,7 @@ body {
 
   .nav-bar {
     padding: 18px 100px;
-    background-color: white;
+    width: 1080px;
   }
 
   .ham-desk {
@@ -441,6 +446,7 @@ body {
     width: 70%;
     display: flex;
     justify-content: space-between;
+    font-weight: 600;
   }
 
   .home .nav-bar-and-hero .hero {
