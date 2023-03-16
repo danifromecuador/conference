@@ -361,7 +361,6 @@ body {
 }
 
 .about .past .past-one .year {
-  backdrop-filter: blur(10px);
   width: fit-content;
   padding: 10px;
   font-size: 28px;
@@ -369,7 +368,6 @@ body {
 }
 
 .about .past .past-one .text {
-  backdrop-filter: blur(10px);
   width: fit-content;
   padding: 10px;
 }
