@@ -12,6 +12,5 @@ mobileMenuClose.addEventListener('click', () => {
 });
 
 about.addEventListener('click', () => {
-    alert('About');
     mobileMenu.classList.toggle('hide');
 });
