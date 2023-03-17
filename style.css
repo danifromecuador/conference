@@ -434,7 +434,8 @@ body.mobile-menu-open {
   .home .program .join,
   .home .speakers .more,
   .about .hero-1 .hello-0,
-  .mobile-menu {
+  .mobile-menu,
+  .right {
     display: none;
   }
 
