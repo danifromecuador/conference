@@ -8,7 +8,7 @@ const body = document.querySelector('.body');
 ham.addEventListener('click', () => { // open mobile menu and hide nav bar
   mobileMenu.classList.toggle('hide');
   navBar.classList.toggle('hide');
-  body.classList.toggle('mobile-menu-open');
+  body.classList.toggle('mobile-menu-open'); // avoid scrolling body when mobile menu is open
 });
 
 mobileMenuClose.addEventListener('click', () => { // close mobile menu and show nav bar
