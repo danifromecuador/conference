@@ -52,7 +52,7 @@ This is a basic mockup for a conference web page. The task is to replicate the t
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://danifromecuador.github.io/conference/)
-- [Project presentation](https://www.loom.com/share/a266e8a0435846fa8fce5a3f7be68a2f)
+- [Project presentation](https://www.loom.com/share/b16c9cf88c204fefb6f68d8c70f8d23f)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
