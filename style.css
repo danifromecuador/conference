@@ -36,6 +36,10 @@ body {
   color: var(--dark);
 }
 
+body.mobile-menu-open {  
+  overflow: hidden;
+}
+
 .mobile-menu {
   background-color: rgba(211, 211, 211, 0.9);
   position: fixed;
