@@ -24,7 +24,8 @@ li {
 
 /* FOR MOBILE VERSION HIDE THESE: */
 .nav-desk-right,
-.join-desk {
+.join-desk,
+.right-desk {
   display: none;
 }
 
@@ -270,7 +271,7 @@ body.mobile-menu-open {
 
   /* change display to flex to see the button more */
 
-  display: none;
+  display: flex;
   justify-content: center;
   column-gap: 15px;
   padding: 10px 0;
@@ -641,6 +642,10 @@ body.mobile-menu-open {
     justify-content: space-around;
     padding: 30px 80px;
     column-gap: 20px;
+  }
+
+  .right-desk {
+    display: block;
   }
 }
 
