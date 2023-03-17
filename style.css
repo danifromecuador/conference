@@ -36,7 +36,7 @@ body {
   color: var(--dark);
 }
 
-body.mobile-menu-open {  
+body.mobile-menu-open {
   overflow: hidden;
 }
 
