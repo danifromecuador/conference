@@ -27,9 +27,18 @@ li {
 .nav-desk-right,
 .join-desk,
 .right-desk,
-.top-dark-bar {
+.top-dark-bar,
+.partner,
+.home .footer-cc {
   display: none;
 }
+
+/* FOR MOBILE VERSION ABOUT PAGE SHOW THIS  */
+.about .partner,
+.about .footer-cc {
+  display: block;
+}
+
 
 body {
   width: 375px;
@@ -413,32 +422,43 @@ body.mobile-menu-open {
   padding: 10px;
 }
 
+.home .partner,
 .about .partner {
   padding: 18px 24px;
   background-color: var(--dark);
 }
 
+.about .partner {
+  display: block;
+}
+
+.about .footer-cc {
+  border: 1px solid red;
+  padding: 5px 24px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.about .footer-cc .right {
+  font-size: 9px;
+}
+
+.home .partner  .title3,
 .about .partner .title3 {
   color: white;
   text-align: center;
   font-size: 22px;
 }
 
-.about .partner .partners {
+.home .partner .partners {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
 
-.about .footer-cc {
-  padding: 18px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 12px;
-}
-
+.home .footer-cc  .right
 .about .footer-cc .right {
   font-size: 10px;
 }
@@ -465,6 +485,23 @@ body.mobile-menu-open {
   .top-dark-bar {
     display: block;
     width: 100%;
+  }
+
+  .home .partner {
+    display: block;
+    background-color: #36393d
+  }
+
+  .join-desk {
+    display: block;    
+  }
+
+  .home .footer-cc {
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
   }
 
   body {
@@ -594,20 +631,25 @@ body.mobile-menu-open {
     width: 45%;
   }
 
-  .about .partner {
+  .home .partner {
     padding: 50px 100px;
   }
 
-  .about .partner .partners {
+  .home .partner .title3 {
+    color: var(--gray);
+  }
+
+  .home .partner .partners {
     column-gap: 30px;
   }
 
-  .about .footer-cc {
+  .home .footer-cc {
     padding: 50px 100px;
     column-gap: 60px;
+    font-size: 12px;
   }
 
-  .about .footer-cc .left {
+  .home .footer-cc .left {
     width: 30%;
   }
 
@@ -676,9 +718,23 @@ body.mobile-menu-open {
     column-gap: 20px;
   }
 
+  .about .partner {
+    display: none
+  }
+
   .right-desk {
     display: block;
   }
+
+  .about .footer-cc {
+    background-color: var(--dark);
+  }
+
+  .about .footer-cc .right-desk {
+    color: var(--gray);
+  }
+
+  
 }
 
 /* DOM MOBILE MENU  */

@@ -22,6 +22,7 @@ about.addEventListener('click', () => { // close mobile menu and show nav bar an
   mobileMenu.classList.toggle('hide');
   navBar.classList.toggle('hide');
   body.classList.toggle('mobile-menu-open');
+
 });
 
 aboutDesk.addEventListener('click', () => {
