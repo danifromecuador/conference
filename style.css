@@ -25,7 +25,8 @@ li {
 /* FOR MOBILE VERSION HIDE THESE: */
 .nav-desk-right,
 .join-desk,
-.right-desk {
+.right-desk,
+.top-dark-bar {
   display: none;
 }
 
@@ -73,6 +74,25 @@ body.mobile-menu-open {
   border-radius: 8px;
   background-color: #272a31;
   color: #d3d3d3;
+}
+
+.top-dark-bar {
+  background-color: var(--dark);
+  position: fixed;
+}
+
+.social-media-links {
+  padding: 5px 100px;
+  color: var(--gray);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.facebook,
+.twitter {
+  height: 15px;
 }
 
 .home .nav-bar-and-hero {
@@ -429,7 +449,7 @@ body.mobile-menu-open {
 /* /////////////////////////////////////////// */
 
 @media screen and (min-width: 768px) {
-  /* FOR MOBILE VERSION HIDE THESE: */
+  /* FOR DESKTOP VERSION HIDE THESE: */
   .ham,
   .home .program .join,
   .home .speakers .more,
@@ -438,6 +458,12 @@ body.mobile-menu-open {
   .right {
     display: none;
   }
+
+  /* FOR DESKTOP VERSION SHOW THESE:  */
+
+.top-dark-bar {
+  display: block;
+}
 
   body {
     width: 1080px;
@@ -449,9 +475,15 @@ body.mobile-menu-open {
     background-size: cover;
   }
 
+  .top-dark-bar {
+    width: 1080px;
+  }
+
   .nav-bar {
     padding: 0 100px;
     width: 1080px;
+    position: fixed;
+    top: 29px;
   }
 
   .ham-desk {
