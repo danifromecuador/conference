@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;  
+  padding: 0;
   font-family: Lato Regular, sans-serif;
 
   /* border: 1px solid red; */
@@ -462,9 +462,10 @@ body.mobile-menu-open {
 
   /* FOR DESKTOP VERSION SHOW THESE:  */
 
-.top-dark-bar {
-  display: block;
-}
+  .top-dark-bar {
+    display: block;
+    width: 100%;
+  }
 
   body {
     width: 100%;
@@ -474,10 +475,6 @@ body.mobile-menu-open {
     background-image: url(images/backgrounds/hero_hero_desk.svg);
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .top-dark-bar {
-    width: 100%;
   }
 
   .nav-bar {
@@ -689,4 +686,10 @@ body.mobile-menu-open {
 .mobile-menu.hide,
 .nav-bar.hide {
   display: none;
+}
+
+.nav-desk.about {
+  border: 3px solid var(--orange);
+  padding: 5px;
+  border-radius: 5px;
 }
